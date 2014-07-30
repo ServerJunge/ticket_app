@@ -1,4 +1,5 @@
 <h1 id="type">Dashboard</h1>
+<p>Overview about all your Tickets</p>
 <div class="page-header"></div>
 
 
@@ -30,11 +31,13 @@
         <td>
           <%= link_to 'Edit', edit_ticket_path(ticket), class: "label label-primary" %>
           <%= link_to 'Close', edit_ticket_path(ticket), class: "label label-success" %>
-          <%= link_to 'Delete', edit_ticket_path(ticket), class: "label label-danger" %>
+          <%= link_to 'Delete', ticket_path(ticket), :method => :delete, class: "label label-danger" %>
         </td>
       </tr>
 
 <% end %>
+
+<%= will_paginate @collection, renderer: BootstrapPagination::Rails %>
 
 </tbody>
 </table>
