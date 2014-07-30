@@ -14,6 +14,7 @@ gem 'simple_form', '~> 3.0.0', github: 'plataformatec/simple_form', branch: 'mas
 
 gem 'bootstrap-sass', '~> 3.1.1'
 gem 'bootswatch-rails'
+gem 'font-awesome-rails'
 
 group :development, :test do
   gem 'rails-erd'
