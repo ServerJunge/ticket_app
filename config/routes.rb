@@ -14,7 +14,7 @@ Ticketapp::Application.routes.draw do
   constraints(SubdomainPresent) do
     root 'tickets#index', as: :subdomain_root
     devise_for :users
-    resources :users, only: :index
+    resources :users, only: [:index, :show]
     resources :tickets, except: [:index, :show, :destroy]
   end
 
