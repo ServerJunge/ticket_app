@@ -9,6 +9,7 @@
             <th>Name</th>
             <th>Email</th>
             <th>Status</th>
+            <th>Profil</th>
           </tr>
         </thead>
         <tbody>
@@ -17,6 +18,7 @@
               <td><%= user.name %></td>
               <td><%= user.email %></td>
               <td><%= user_status(user) %></td>
+              <td><%= link_to " ", user_path(user), class: 'glyphicon glyphicon-user' %></td>
             </tr>
           <% end %>
         </tbody>
