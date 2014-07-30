@@ -1,18 +1,32 @@
 <div class="col-md-12">
-  <% @tickets.each do |ticket| %>
-    <h3>
-      <%= ticket.name %>
-      <small><%= ticket.client %></small>
-      <div class="pull-right">
-        <%= link_to edit_ticket_path(ticket), class: "icon-link" do %>
-          <small><i class="glyphicon glyphicon-cog"></i></small>
-        <% end %>
-        <small><i class="glyphicon glyphicon-plus-sign"></i></small>
-      </div>
-    </h3>
 
-    <ul class="list-group">
-      <li class="list-group-item">No entries yet!</li>
-    </ul>
-  <% end %>
+
+<table class="table table-striped table-hover ">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Titel</th>
+      <th>Client</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+
+<% @tickets.each do |ticket| %>
+
+      <tr>
+        <td><%= ticket.id %></td>
+        <td><%= ticket.name %></td>
+        <td><%= ticket.client %></td>
+        <td>
+          <%= link_to 'Edit', edit_ticket_path(ticket), class: "label label-primary" %>
+          <%= link_to 'Close', edit_ticket_path(ticket), class: "label label-success" %>
+          <%= link_to 'Delete', edit_ticket_path(ticket), class: "label label-danger" %>
+        </td>
+      </tr>
+
+<% end %>
+
+</tbody>
+</table>
 </div>

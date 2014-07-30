@@ -2,6 +2,10 @@ body {
   padding-top: 0px;
 }
 
+.table a {
+  text-decoration: none;
+}
+
 #flash_notice {
   @extend .alert;
   @extend .alert-success;
