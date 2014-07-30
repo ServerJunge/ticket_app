@@ -16,6 +16,9 @@ gem 'bootstrap-sass', '~> 3.1.1'
 gem 'bootswatch-rails'
 gem 'font-awesome-rails'
 
+gem "chartkick"
+gem 'groupdate'
+
 group :development, :test do
   gem 'rails-erd'
   gem 'guard'
