@@ -1,19 +1,19 @@
 development:
   adapter: postgresql
   encoding: unicode
-  database: timetracker_development
+  database: ticket_development
   pool: 5
   username: postgres
-  password: postgres
+  password: yoda-c3po!
   host: localhost
 
 test:
   adapter: postgresql
   encoding: unicode
-  database: timetracker_test
+  database: ticket_test
   pool: 5
   username: postgres
-  password: postgres
+  password: yoda-c3po!
   host: localhost
 
 production:

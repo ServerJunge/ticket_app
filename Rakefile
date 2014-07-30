@@ -3,4 +3,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-Timetracker::Application.load_tasks
+Ticketapp::Application.load_tasks

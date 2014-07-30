@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe Project do
+describe Ticket do
   describe "validations" do
     it { should validate_presence_of :name }
     it { should validate_uniqueness_of :name }
@@ -11,6 +11,6 @@ describe Project do
   end
 
   it "defaults archived to false" do
-    expect(Project.new).to_not be_archived
+    expect(Ticket.new).to_not be_archived
   end
 end

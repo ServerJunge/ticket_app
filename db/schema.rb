@@ -23,7 +23,7 @@ ActiveRecord::Schema.define(version: 20140522215656) do
     t.datetime "updated_at"
   end
 
-  create_table "projects", force: true do |t|
+  create_table "tickets", force: true do |t|
     t.string   "name"
     t.string   "client"
     t.boolean  "archived",   default: false, null: false

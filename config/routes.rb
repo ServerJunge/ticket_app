@@ -10,14 +10,14 @@ class SubdomainBlank
   end
 end
 
-Timetracker::Application.routes.draw do
+Ticketapp::Application.routes.draw do
   constraints(SubdomainPresent) do
-    root 'projects#index', as: :subdomain_root
+    root 'tickets#index', as: :subdomain_root
     devise_for :users
     resources :users, only: :index
-    resources :projects, except: [:index, :show, :destroy]
+    resources :tickets, except: [:index, :show, :destroy]
   end
-  
+
   constraints(SubdomainBlank) do
     root 'welcome#index'
     resources :accounts, only: [:new, :create]

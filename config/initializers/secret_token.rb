@@ -9,4 +9,4 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-Timetracker::Application.config.secret_key_base = '07d9223403f1e82e31dfd6f8b257db8b3819950c4e790b8b4b32ceb4b6f11bf944441e5ccd4df10127c04b20c162bd95d6b493e021b2a77395b768048b2f6c4f'
+Ticketapp::Application.config.secret_key_base = '07d9223403f1e82e31dfd6f8b257db8b3819950c4e790b8b4b32ceb4b6f11bf944441e5ccd4df10127c04b20c162bd95d6b493e021b2a77395b768048b2f6c4f'
