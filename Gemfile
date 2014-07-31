@@ -20,6 +20,7 @@ gem 'will_paginate-bootstrap'
 
 gem "chartkick"
 gem 'groupdate'
+gem 'bootsy'
 
 group :development, :test do
   gem 'rails-erd'

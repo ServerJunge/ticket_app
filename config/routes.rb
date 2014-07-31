@@ -11,6 +11,7 @@ class SubdomainBlank
 end
 
 Ticketapp::Application.routes.draw do
+  mount Bootsy::Engine => '/bootsy', as: 'bootsy'
   constraints(SubdomainPresent) do
     root 'tickets#index', as: :subdomain_root
     devise_for :users
