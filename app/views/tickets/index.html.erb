@@ -4,8 +4,12 @@
 
 
 <div class="col-md-12">
+  <div class="panel panel-default">
+    <div class="panel-body">
 
-<%= line_chart Ticket.group_by_hour(:created_at).count %>
+      <%= column_chart Ticket.group_by_day(:created_at, format: "%b %d, %Y").count %>
+    </div>
+  </div>
 
 <table id="datatable_tickets" class="table table-striped">
   <thead>
@@ -26,8 +30,8 @@
         <td><%= ticket.id %></td>
         <td><%= ticket.name %></td>
         <td><%= ticket.client %></td>
-        <td><%= ticket.created_at %></td>
-        <td><%= ticket.updated_at %></td>
+        <td><%= ticket.created_at.strftime("%b %d, %Y") %></td>
+        <td><%= ticket.updated_at.strftime("%b %d, %Y") %></td>
         <td>
           <%= link_to 'Edit', edit_ticket_path(ticket), class: "label label-primary" %>
           <%= link_to 'Close', edit_ticket_path(ticket), class: "label label-success" %>
