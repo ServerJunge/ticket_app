@@ -17,3 +17,6 @@ body { padding-top: 60px; }
 @import "signin";
 @import "typography";
 @import "font-awesome";
+
+@import "dataTables/jquery.dataTables";
+@import "dataTables/jquery.dataTables.bootstrap3";

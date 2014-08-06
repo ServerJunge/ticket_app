@@ -14,6 +14,8 @@
 //= require jquery_ujs
 //= require bootsy
 //= require bootstrap
-//= require_tree .
+//= require dataTables/jquery.dataTables
+//= require dataTables/jquery.dataTables.bootstrap3
 //= require jsapi
 //= require chartkick
+//= require_tree .

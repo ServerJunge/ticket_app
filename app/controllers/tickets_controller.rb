@@ -1,6 +1,6 @@
 class TicketsController < ApplicationController
   def index
-    @tickets = Ticket.paginate(:page => params[:page], :per_page => 3)
+    @tickets = Ticket.all
   end
 
   def new
